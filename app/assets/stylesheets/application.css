@@ -8,3 +8,16 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+th.sorted-asc {
+  background-color: #FFBF00; /* Amber Gold */
+}
+
+th.sorted-desc {
+  background-color: #0FFFFF; /* Cyan Glow */
+}
+/*
+th.sorted-none {
+  background-color: #f0f0f0; /* optional: light gray *
+}
+
+*/

@@ -7,11 +7,11 @@
 <table>
   <thead>
     <tr>
-      <th>
+      <th class="<%= current_sort_class("title") %>">
         <%= link_to "Title", movies_path(sort: "title", direction: next_direction("title")) %>
         <%= current_sort_icon("title") %>
       </th>
-      <th>
+      <th class="<%= current_sort_class("rating") %>">
       <%= link_to "Rating", movies_path(sort: "rating", direction: next_direction("rating")) %>
       <%= current_sort_icon("rating") %>
       </th>
