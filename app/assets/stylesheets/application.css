@@ -8,11 +8,11 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
-th.sorted-asc {
+th.sorted-asc, td.sorted-asc{
   background-color: #FFBF00; /* Amber Gold */
 }
 
-th.sorted-desc {
+th.sorted-desc, td.sorted-desc {
   background-color: #0FFFFF; /* Cyan Glow */
 }
 /*
