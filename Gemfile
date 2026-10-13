@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby '4.0.7'
+ruby "4.0.7"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.1.4"
@@ -56,5 +56,5 @@ group :development do
 end
 
 group :production do
-  gem 'pg' # for Heroku deployment
+  gem "pg" # for Heroku deployment
 end

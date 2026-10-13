@@ -1,5 +1,4 @@
 module MoviesHelper
-
   def current_sort
     params[:sort].presence || session[:sort]
   end
@@ -8,7 +7,7 @@ module MoviesHelper
     params[:direction].presence || session[:direction] || "none"
   end
 
-    # Cycles from none, asc to desc
+  # Cycles from none, asc to desc
   def next_direction(column)
     if current_sort == column
       case current_direction
