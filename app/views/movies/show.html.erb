@@ -1,8 +1,9 @@
 <p style="color: green"><%= notice %></p>
-
+<div class="centered">
+<h1 class="centered"><%= @movie.title %></h1>
 <%= render @movie %>
 
-<div>
+
   <%= link_to "Edit this movie", edit_movie_path(@movie) %> |
   <%= link_to "Back to movies", movies_path %>
 

@@ -8,6 +8,13 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 th.sorted-asc, td.sorted-asc{
   background-color: #FFBF00; /* Amber Gold */
 }
@@ -15,9 +22,15 @@ th.sorted-asc, td.sorted-asc{
 th.sorted-desc, td.sorted-desc {
   background-color: #0FFFFF; /* Cyan Glow */
 }
-/*
-th.sorted-none {
-  background-color: #f0f0f0; /* optional: light gray *
+
+body {
+  background-color: #928b8beb; /* gray */
+  margin: 0;
+  padding: 40px 0;
 }
 
-*/
+h1, h2, h3 {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  color: #2c2c8a;
+  font-style: italic;
+}

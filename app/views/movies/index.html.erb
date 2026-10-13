@@ -2,9 +2,9 @@
 
 <% content_for :title, "Movies" %>
 
-<h1>Movies</h1>
+<h1 class="centered">Movies</h1>
 
-<table>
+<table class="centered">
   <thead>
     <tr>
       <th class="<%= column_sort_class("title") %>">
@@ -40,5 +40,6 @@
     </tr>
   </tfoot>
 </table>
-
+<div class="centered">
 <%= link_to "New movie", new_movie_path %>
+</div>
