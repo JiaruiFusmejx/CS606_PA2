@@ -7,9 +7,18 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Rating</th>
-      <th>Release Date</th>
+      <th>
+        <%= link_to "Title", movies_path(sort: "title", direction: next_direction("title")) %>
+        <%= current_sort_icon("title") %>
+      </th>
+      <th>
+      <%= link_to "Rating", movies_path(sort: "rating", direction: next_direction("rating")) %>
+      <%= current_sort_icon("rating") %>
+      </th>
+      <th>
+      <%= link_to "Release Date", movies_path(sort: "release_date", direction: next_direction("release_date")) %>
+      <%= current_sort_icon("release_date") %>
+      </th>
       <th>Actions</th>
     </tr>
   </thead>
@@ -20,7 +29,7 @@
         <td><%= movie.rating %></td>
         <td><%= movie.release_date.strftime("%Y-%m-%d") %></td>
         <td>
-          <%= link_to "Show", movie %>
+          <%= link_to "Show this movie", movie %>
         </td>
       </tr>
     <% end %>
