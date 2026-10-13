@@ -25,9 +25,9 @@
   <tbody>
     <% @movies.each do |movie| %>
       <tr>
-        <td><%= movie.title %></td>
-        <td><%= movie.rating %></td>
-        <td><%= movie.release_date.strftime("%Y-%m-%d") %></td>
+        <td class="<%= column_sort_class("title") %>"><%= movie.title %></td>
+        <td class="<%= column_sort_class("rating") %>"><%= movie.rating %></td>
+        <td class="<%= column_sort_class("release_date") %>"><%= movie.release_date.strftime("%Y-%m-%d") %></td>
         <td>
           <%= link_to "Show this movie", movie %>
         </td>
