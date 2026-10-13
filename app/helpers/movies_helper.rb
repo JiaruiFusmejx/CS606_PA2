@@ -40,7 +40,7 @@ module MoviesHelper
     end
   end
 
-  def current_sort_class(column)
+  def column_sort_class(column)
     if current_sort == column
       case current_direction
       when "asc"  then "sorted-asc"
